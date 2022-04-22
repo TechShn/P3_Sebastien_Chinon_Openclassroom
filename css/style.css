@@ -1,4 +1,10 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   -webkit-box-sizing: border-box;
@@ -6,31 +12,46 @@ body {
   text-align: center;
 }
 
-h2 {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: left;
-}
-
-footer {
-  font-size: 20px;
-  text-align: left;
-  color: white;
-  background-color: #1B2631;
-}
-
 header {
+  position: relative;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   font-family: "Shrikhand", cursive;
   font-weight: 800;
   font-size: 20px;
+  margin: 0px 0px;
+}
+
+header p {
+  position: relative;
+  right: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  height: 30px;
+  margin: 0px 0px;
 }
 
 footer {
-  position: relative;
   right: 20px;
-  width: 110%;
-  height: 300px;
+  width: 103%;
+  height: 400px;
   font-size: 18px;
   text-align: left;
   color: white;
@@ -53,6 +74,10 @@ h2 {
   font-size: 30px;
   font-weight: bold;
   text-align: left;
+}
+
+.index {
+  height: 2150px;
 }
 
 .reservation {
@@ -237,4 +262,113 @@ h2 {
   color: #2c9c81;
   background-color: #99E2D0;
   border-radius: 5px;
+}
+
+.image-plat {
+  width: 100%;
+  height: 300px;
+}
+
+.index2 {
+  display: block;
+  width: 100%;
+  background-color: red;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  margin-top: -100px;
+  z-index: 5000;
+}
+
+.index2 h3 {
+  font-size: 25px;
+  text-align: left;
+  font-weight: 300;
+  width: 50px;
+  border-bottom: 2px solid #99E2D0;
+  margin: 10px 15px;
+}
+
+.titre {
+  font-family: "Shrikhand", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.titre h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 35px;
+  width: 80%;
+  margin: 0px 0px 0px 10px;
+}
+
+.titre p {
+  width: 10%;
+  font-size: 30px;
+}
+
+.menu {
+  height: 80px;
+  width: 90%;
+  background-color: white;
+  -webkit-box-shadow: 3px 5px 8px lightgrey;
+          box-shadow: 3px 5px 8px lightgrey;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.menu__name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 0px 0px 20px;
+}
+
+.menu__plus {
+  position: relative;
+  bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 0px 0px 20px;
+}
+
+.menu__plus--description {
+  width: 83%;
+  text-align: left;
+  font-weight: 300;
+}
+
+.menu__plus--prix {
+  width: 10%;
+  font-weight: bold;
+}
+
+.entrée {
+  height: 350px;
+}
+
+.plat {
+  height: 350px;
+}
+
+.dessert {
+  height: 350px;
+}
+
+.submit {
+  height: 50px;
+  width: 200px;
+  color: white;
+  background-color: #9356DC;
+  font-size: 20px;
+  border-radius: 30px;
+  margin: 30px;
 }
