@@ -22,9 +22,10 @@
     }
      &__text{
         &--bold{
-            font-size: 35px;
+            width: 70%;
+            font-size: 30px;
             font-weight: bold;
-            margin: 0px 25px;
+            margin: 0px auto;
         }
         &--thin{
             font-size: 22px;
@@ -32,25 +33,34 @@
         }
         &--button{
             button{
+                height: 55px;
+                width: 250px;
                 color: white;
                 background-color: $color-primary;
-                font-size: 20px;
+                border: 2px solid $color-primary;
+                font-size: 16px;
+                font-weight: bold;
                 border-radius: 30px;
-                padding: 20px 20px;
+                padding: 0px 10px;
+                margin: auto;
             }
         }
     }
+}
+
+#fonctionement{
+    margin-bottom: 100px;
 }
 
 .choix{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 100px;
+    height: 70px;
     background-color: #F8F9F9;
-    border-radius: 35px;
+    border-radius: 25px;
     box-shadow: 3px 5px 8px lightgrey;
-    width: 450px;
+    width: 440px;
     margin: 30px auto;
     &:hover{
         background-color: lighten($color-primary, 36%);
@@ -80,8 +90,10 @@
     }
     &__text{
         width: 300px;
-        font-size: 25px;
+        font-size: 16px;
         font-weight: bold;
+        text-align: left;
+        margin: 20px;
     }
 }
 
