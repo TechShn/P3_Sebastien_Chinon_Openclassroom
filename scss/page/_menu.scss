@@ -41,28 +41,41 @@
         width: 80%;
         margin: 0px 0px 0px 20px;
     }
-    p{
-        width: 10%;
-        font-size: 30px;
+    &__heart{
+        display: flex;
+        align-items: center;
+        
+        p{
+            width: 100%;
+            font-size: 30px;
+            &:hover{
+                background-color: $color-tertiary;
+            }
+    }
+    
     }
 }
 
 .menu{
     height: 70px;
-    width: 90%;
+    width: 100%;
     background-color: white;
     box-shadow: 3px 5px 8px lightgrey;
     border-radius: 20px;
-    margin: 0 auto;
+    transform-origin: left;
+    transition: all 0.5s;
+    margin: 0px 0px;
     &__name {
+        position: relative;
+        bottom: 5px;
         font-size: 20px;
         font-weight: bold;
         text-align: left;
-        padding: 10px 0px 0px 20px;
+        padding: 0px 0px 0px 20px;
     }
     &__plus{
         position: relative;
-        bottom: 30px;
+        bottom: 35px;
         display: flex;
         padding: 0px 0px 0px 20px;
         &--description {
@@ -93,8 +106,58 @@
     height: 50px;
     width: 200px;
     color: white;
-    background-color: $color-primary;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    border: 0.01px solid $color-primary;
     font-size: 20px;
     border-radius: 30px;
     margin-bottom: 90px;
+}
+
+.validation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 15%;
+    height: 70px;
+    background-color: $color-tertiary;
+    cursor: pointer;
+    opacity: 0%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.5s;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    i{
+        font-size: 30px;
+        color: white;
+        text-align: left;
+    }
+} 
+
+.block{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius: 20px;
+    transition: color 0.5s;
+    &:hover .menu{
+        transform: scaleX(0.85);
+        border-radius: 0px;
+    }
+    &:hover .validation{
+        transform: scaleX(1);
+        background-color: $color-tertiary;
+        opacity: 100%;
+    }
+    &:active .validation{
+        background-color: white;
+        & > i{
+            transition: all 0.5s;
+            color: darken($color-tertiary, 30%);
+        }
+    }
 }
