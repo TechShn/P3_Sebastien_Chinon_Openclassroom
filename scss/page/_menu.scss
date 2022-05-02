@@ -51,37 +51,38 @@
             &:hover{
                 background-color: $color-tertiary;
             }
-    }
-    
+        }
     }
 }
 
 .menu{
-    height: 70px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: white;
     box-shadow: 3px 5px 8px lightgrey;
     border-radius: 20px;
-    transform-origin: left;
     transition: all 0.5s;
-    margin: 0px 0px;
     &__name {
-        position: relative;
-        bottom: 5px;
         font-size: 20px;
         font-weight: bold;
         text-align: left;
-        padding: 0px 0px 0px 20px;
+        margin: 0;
+        margin-top: 5px;
+        margin-left: 10px;
     }
     &__plus{
-        position: relative;
-        bottom: 35px;
         display: flex;
-        padding: 0px 0px 0px 20px;
+        flex-direction: row;
+        justify-content: space-between;
         &--description {
-            width: 83%;
+            white-space:nowrap;
             text-align: left;
             font-weight: 300;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-left: 10px;
+            margin-bottom: 5px;
         }
         &--prix {
             width: 10%;
@@ -117,13 +118,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    width: 15%;
+    width: 0%;
     height: 70px;
     background-color: $color-tertiary;
     cursor: pointer;
-    opacity: 0%;
-    transform: scaleX(0);
+    opacity: 0;
     transform-origin: right;
     transition: all 0.5s;
     border-top-right-radius: 20px;
@@ -137,27 +136,21 @@
 
 .block{
     width: 90%;
-    height: 70px;
     display: flex;
-    justify-content: flex-end;
-    overflow: hidden;
+    justify-content: flex-start;
     margin: 20px auto;
     border-radius: 20px;
-    transition: color 0.5s;
+    overflow: hidden;
     &:hover .menu{
-        transform: scaleX(0.85);
+        width: 85%;
+        transform: width;
         border-radius: 0px;
+        text-overflow: ellipsis;
     }
     &:hover .validation{
-        transform: scaleX(1);
-        background-color: $color-tertiary;
-        opacity: 100%;
+        width: 15%;
+        transform: width;
+        opacity: 1;
     }
-    &:active .validation{
-        background-color: white;
-        & > i{
-            transition: all 0.5s;
-            color: darken($color-tertiary, 30%);
-        }
-    }
+
 }
