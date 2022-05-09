@@ -24,7 +24,7 @@
     }
 }
 
-.coeur{
+.coeur {
     visibility: hidden;
     position: relative;
     top: 20px;
@@ -45,9 +45,9 @@
         &:active > &--solid{
             opacity: 1;
         }
-    };
+    }
     
-        &--solid{
+        &--solid {
             width: 50px;
             position: absolute;
             opacity: 0;
@@ -65,8 +65,7 @@
             overflow: hidden;
             transition: all 0.8s ease;
             z-index: 1;
-        }
-        
+        };
 }
 
 .coeur-2 {
@@ -80,18 +79,18 @@
     z-index: 0;
     cursor: pointer;
     
-    &:active > &--solid{
+    &:active > &--solid {
             opacity: 1;
-    }
+    };
     
     @include mobile {
         display: none;
-        &:active > &--solid{
+        &:active > &--solid {
             opacity: 1;
-        }
+        };
     };
     
-        &--solid{
+        &--solid {
             height: 60px;
             width: 60px;
             position: absolute;
@@ -110,11 +109,10 @@
             overflow: hidden;
             transition: all 0.8s ease;
             z-index: 1;
-        }
-        
+        };
 }
 
-.validation{
+.validation {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,7 +124,7 @@
     transition: all 0.4s;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    i{
+    i {
         font-size: 30px;
         color: white;
         text-align: left;
@@ -135,7 +133,7 @@
     }
 } 
 
-.block{
+.block {
     width: 70%;
     display: flex;
     justify-content: flex-start;
@@ -146,13 +144,13 @@
     @include mobile {
         width: 90%;
     };
-    &:hover .menu{
+    &:hover .menu {
         width: 80%;
         border-bottom-right-radius: 0px;
         border-top-right-radius: 0px;
         text-overflow: ellipsis;
     }
-    &:hover .validation{
+    &:hover .validation {
         width: 20%;
         opacity: 1;
         & i {

@@ -1,17 +1,17 @@
-.index{
+.index {
     height: 1510px;
 
     @include mobile {
         height: 1850px;
     };
 
-    @include tablette{
+    @include tablette {
         height: 2650px;
     }
 
 }
 
-.reservation{
+.reservation {
     height: 300px;
     background-color: #F8F9F9;
     margin-bottom: 0px;
@@ -20,7 +20,7 @@
         height: 400px;
     };
     
-    &__icon-map{
+    &__icon-map {
         display: flex;
         justify-content: center;
         background-color: #EAEDED;
@@ -38,8 +38,8 @@
             color: #353535;
         }
     }
-    &__text{
-        &--bold{
+    &__text {
+        &--bold {
             width: 70%;
             font-size: 30px;
             font-weight: bold;
@@ -47,17 +47,17 @@
             text-align: center;
         }
 
-        &--thin{
+        &--thin {
             font-size: 22px;
             font-weight: 300;
             text-align: center;
             
         }
 
-        &--button{
+        &--button {
             text-align: center;
 
-            button{
+            button {
                 height: 55px;
                 width: 250px;
                 color: white;
@@ -80,7 +80,7 @@
     }
 }
 
-#fonctionement{
+#fonctionement {
     margin-bottom: 80px;
     display: flex;
     justify-content: center;
@@ -100,7 +100,7 @@
     
 }
 
-.choix{
+.choix {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -134,15 +134,15 @@
     };
 
     
-    &:hover{
+    &:hover {
         background-color: lighten($color-primary, 36%);
         box-shadow:  5px 8px 4px lightgrey;
-        .choix__icon{
+        .choix__icon {
             color: $color-primary;
         }
         
     }
-    &__number{
+    &__number {
         position: relative;
         right: 0px;
         bottom: 16px;
@@ -166,7 +166,7 @@
             background: $color-primary;
         };
     }
-    &__icon{
+    &__icon {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -185,7 +185,7 @@
 
         
     }
-    &__text{
+    &__text {
         width: 100%;
         font-size: 25px;
         font-weight: bold;
@@ -207,7 +207,7 @@
     }
 }
 
-#restaurants{
+#restaurants {
     background-color: #eaeaea;
     padding-top: 30px;
     display: flex;
@@ -229,7 +229,7 @@
 }
 
 
-.resto-card{
+.resto-card {
     width: 35%;
     height: 390px;
     background-color: white;
@@ -260,6 +260,7 @@
         @include mobile {
             height: 200px;
         };
+
         &--size{
             width: 100%;
             height: 100%;
@@ -271,7 +272,8 @@
                 object-fit: cover;
             };
         }
-        &--size-2{
+
+        &--size-2 {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -283,6 +285,7 @@
             };
         }
     }
+
     &__name {
         margin-block-start: 0em;
         margin-block-end: 0em;
@@ -293,6 +296,7 @@
         text-align: left;
         
     }
+
     &__place {
         display: inline-block;
         width: 35%;
@@ -306,7 +310,8 @@
             width: 69%;
         };
     }
-    &__icon{
+
+    &__icon {
         position: relative;
         bottom: 10px;
         display: inline-block;
@@ -330,7 +335,7 @@
             }
         };
         
-        &--solid{
+        &--solid {
             width: 100%;
             position: absolute;
             opacity: 0;
@@ -348,8 +353,7 @@
             overflow: hidden;
             transition: all 0.8s ease;
             z-index: 1;
-        }
-        
+        };
     }
     &__icon-new {
         display: flex;
@@ -365,11 +369,13 @@
         color: darken($color-tertiary, 35%);
         background-color: $color-tertiary;
         border-radius: 5px;
+
         @include mobile {
             position: relative;
             bottom: 310px;
             left: 60%;
         };
+         
         @include tablette {
             position: relative;
             bottom: 390px;

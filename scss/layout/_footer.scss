@@ -1,4 +1,4 @@
-footer{
+footer {
     width: 99.5%;
     height: 250px;
     font-size: 18px;
@@ -7,7 +7,7 @@ footer{
     background-color: #353535;
     padding: 5px;
 
-    h3{
+    h3 {
         font-size: 30px;
         font-family: "Shrikhand", cursive;
         font-weight: 300;
@@ -18,7 +18,7 @@ footer{
         };
     }
     
-    a{
+    a {
         display: block;
         font-size: 18px;
         color: white;
@@ -26,6 +26,5 @@ footer{
         @include mobile {
             font-size: 16px;
         };
-    }
-
+    };
 }
