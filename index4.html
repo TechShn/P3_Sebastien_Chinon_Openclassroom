@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="ccs/normalize.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <script src="https://kit.fontawesome.com/ee86bd40cb.js" crossorigin="anonymous"></script>
@@ -15,15 +16,20 @@
     </header>
     
     <div class="image-plat">
-        <img src="./images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" />
+        <img src="./images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="menu" />
+        <p>La palette du goût</p>
+        <div class="coeur-2">
+            <i class="fa-regular fa-heart"></i>
+            <div class="coeur-2 coeur-2--solid"><i class="fa-solid fa-heart"></i></div>
+        </div>
     </div>
     
     <main class="index2">
         <section class="titre">
             <h2>La palette du goût</h2>
-            <div class="icon-titre">
+            <div class="coeur">
                 <i class="fa-regular fa-heart"></i>
-                <div class="icon-titre--solid"><i class="fa-solid fa-heart"></i></div>
+                <div class="coeur coeur--solid"><i class="fa-solid fa-heart"></i></div>
             </div>
         </section>
         
@@ -33,8 +39,8 @@
                 <div class="menu">
                     <p class="menu__name">Fricassé d'escargot</p>
                     <div class="menu__plus">
-                        <p class="menu__plus--description">Au pimet d'espelette</p>
-                        <p class="menu__plus--prix">25€</p>
+                        <p class="menu__plus__description">Au pimet d'espelette</p>
+                        <p class="menu__plus__prix">25€</p>
                     </div>
                 </div>
                 <div class="validation">
@@ -46,8 +52,8 @@
                 <div class="menu">
                     <p class="menu__name">Foie gras de Canard mi-cuit</p>
                     <div class="menu__plus">
-                        <p class="menu__plus--description">Et ses copeaux de truffe noire</p>
-                        <p class="menu__plus--prix">35€</p>
+                        <p class="menu__plus__description">Et ses copeaux de truffe noire</p>
+                        <p class="menu__plus__prix">35€</p>
                     </div>
                 </div>
                 <div class="validation">
@@ -59,8 +65,8 @@
                 <div class="menu">
                     <p class="menu__name">Oeuf au plat</p>
                     <div class="menu__plus">
-                        <p class="menu__plus--description">Assaisonné à la truffe sur lit de ...</p>
-                        <p class="menu__plus--prix">20€</p>
+                        <p class="menu__plus__description">Assaisonné à la truffe sur lit de ...</p>
+                        <p class="menu__plus__prix">20€</p>
                     </div>
                 </div>
                 <div class="validation">
@@ -75,8 +81,8 @@
                 <div class="menu">
                     <p class="menu__name">Filet de boeuf aux herbes</p>
                     <div class="menu__plus">
-                        <p class="menu__plus--description">Accompagnées de sa ribambelle de légumes</p>
-                        <p class="menu__plus--prix">40€</p>
+                        <p class="menu__plus__description">Accompagnées de sa ribambelle de légumes</p>
+                        <p class="menu__plus__prix">40€</p>
                     </div> 
                 </div>
                 <div class="validation">
@@ -88,8 +94,8 @@
                 <div class="menu">
                     <p class="menu__name">Parmentier de queu de boeuf</p>
                     <div class="menu__plus">
-                        <p class="menu__plus--description">A la truffe noire sur sa purée de panais</p>
-                        <p class="menu__plus--prix">35€</p>
+                        <p class="menu__plus__description">A la truffe noire sur sa purée de panais</p>
+                        <p class="menu__plus__prix">35€</p>
                     </div>
                 </div>
                 <div class="validation">
@@ -101,8 +107,8 @@
                 <div class="menu">
                     <p class="menu__name">Filet de turbot</p>
                     <div class="menu__plus">
-                        <p class="menu__plus--description">Aux agrumes</p>
-                        <p class="menu__plus--prix">44€</p>
+                        <p class="menu__plus__description">Aux agrumes</p>
+                        <p class="menu__plus__prix">44€</p>
                     </div>
                 </div>
                 <div class="validation">
@@ -117,8 +123,8 @@
                 <div class="menu">
                     <p class="menu__name">Paris-Brest</p>
                     <div class="menu__plus">
-                        <p class="menu__plus--description">revisitée</p>
-                        <p class="menu__plus--prix">18€</p>
+                        <p class="menu__plus__description">revisitée</p>
+                        <p class="menu__plus__prix">18€</p>
                     </div>
                 </div>
                 <div class="validation">
@@ -130,8 +136,8 @@
                 <div class="menu">
                     <p class="menu__name">Macaron aux chocolat d'exception</p>
                     <div class="menu__plus">
-                        <p class="menu__plus--description">Et glace à la vanille de Madagascar</p>
-                        <p class="menu__plus--prix">22€</p>
+                        <p class="menu__plus__description">Et glace à la vanille de Madagascar</p>
+                        <p class="menu__plus__prix">22€</p>
                     </div>
                 </div>
                 <div class="validation">
@@ -143,8 +149,8 @@
                 <div class="menu">
                     <p class="menu__name">Mousse au chocolat</p>
                     <div class="menu__plus">
-                        <p class="menu__plus--description">au piment d'espelette et à la truffe noire</p>
-                        <p class="menu__plus--prix">23€</p>
+                        <p class="menu__plus__description">au piment d'espelette et à la truffe noire</p>
+                        <p class="menu__plus__prix">23€</p>
                     </div>
                 </div>
                 <div class="validation">
@@ -160,10 +166,10 @@
     
     <footer>
         <h3>Ohmyfood</h3>
-        <p><i class="fa-solid fa-utensils"></i>Proposer un restaurant</p>
-        <p><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p>
-        <p>Mention legal</p>
-        <p>Contact</p>
+        <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+        <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+        <a href="#">Mention legal</a>
+        <a href="https://outlook.live.com/">Contact</a>
     </footer>
 </body>
 

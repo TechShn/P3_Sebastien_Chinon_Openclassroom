@@ -1,0 +1,31 @@
+footer{
+    width: 99.5%;
+    height: 250px;
+    font-size: 18px;
+    text-align: left;
+    color: white;
+    background-color: #353535;
+    padding: 5px;
+
+    h3{
+        font-size: 30px;
+        font-family: "Shrikhand", cursive;
+        font-weight: 300;
+        margin-left: 30px;
+        margin-top: 30px;
+        @include mobile {
+            font-size: 25px;
+        };
+    }
+    
+    a{
+        display: block;
+        font-size: 18px;
+        color: white;
+        margin: 10px 30px;
+        @include mobile {
+            font-size: 16px;
+        };
+    }
+
+}

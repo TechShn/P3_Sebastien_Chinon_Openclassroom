@@ -1,31 +1,78 @@
-.image-plat{
+.image-plat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 300px;
+    height: 600px;
     overflow: hidden;
-    img{
+    background-color: rgba($color: $color-tertiary, $alpha: 0.5);
+
+    p{
+        position: relative;
+        bottom: 40px;
+        height: 100px;
+        width: 30%;
+        font-family: "Shrikhand", cursive;
+        font-size: 45px;
+        color: white;
+        text-align: center;
+        z-index: 1;
+        @include mobile {
+            display: none;
+        };
+
+        @include tablette {
+            font-size: 30px;
+            width: 30%;
+        };
+    }
+    img {
+        width: 75%;
+        height: 600px;
+        object-fit: fill;
+        text-align: center;
+
+        @include mobile {
+            width: 100%;
+            height: 300px;
+            object-fit: cover
+        };
+
+        @include tablette {
+            width: 75%;
+        };
+    }
+    @include mobile {
         width: 100%;
         height: 300px;
-        object-fit: cover;
-    }
+    };
 }
 
-.index2{
+.index2 {
     position: relative;
-    display: block;
+    top: 0px;
     width: 100%;
-    background-color: #F8F9F9;
-    border: 2px solid #F8F9F9;
+    background-color: #f6f6f6;
+    border: 2px solid #f6f6f6;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     margin: -50px 0px auto;
-    z-index: 5000;
+    z-index: 2;
+
     h3{
-        font-size: 18px;
-        text-align: left;
+        font-size: 22px;
+        text-align: center;
         font-weight: 300;
         width: 50px;
         border-bottom: 2px solid $color-tertiary;
-        margin: 10px 15px;
+        border-top: 2px solid $color-tertiary;
+        margin: 10px auto;
+        @include mobile {
+            font-size: 18px;
+            border-top: 0px solid $color-tertiary;
+            border-left: 0px solid $color-tertiary;
+            margin: 10px 15px;
+        };
     }
 }
 
@@ -35,162 +82,108 @@
     display: flex;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
-    h2{
-        display: flex;
+
+    h2 {
+        display: none;
         align-items: center;
         font-size: 30px;
         width: 75%;
-        margin: 0px 0px 0px 20px;
+        margin: 0px 0px 0px 20px; 
+        @include mobile {
+            display: flex;
+        };
+         @include tablette {
+            display: none;
+        };
     }
 }
 
-.icon-titre{
-    position: relative;
-    top: 20px;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    font-size: 35px;
-    font-weight: 100;
-    margin: 0px 10px;
-    text-align: center;
-    z-index: 0;
-    cursor: pointer;
-    &:active > &--solid{
-        opacity: 1;
-    }
-    &--solid{
-        width: 51px;
-        position: absolute;
-        opacity: 0;
-        background-color: #f3ec78;
-        background-image: linear-gradient(45deg, $color-secondary, $color-primary);
-        background-size: 100%;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        -moz-text-fill-color: transparent;
-        top: 0px;
-        bottom: 1;
-        left: 1;
-        right: 1;
-        overflow: hidden;
-        transition: all 0.5s ease;
-        z-index: 1;
-    }
-    
-}
-
-.menu{
+.menu {
     display: flex;
     flex-direction: column;
+    height: 100px;
     width: 100%;
     background-color: white;
     box-shadow: 3px 5px 8px lightgrey;
     border-radius: 20px;
     transition: all 0.5s;
+
+    @include mobile {
+        height: 85px;
+    };
+
     &__name {
         font-size: 20px;
         font-weight: bold;
         text-align: left;
         margin: 0;
-        margin-top: 5px;
+        margin-top: 10px;
         margin-left: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
-    &__plus{
+
+    &__plus {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        &--description {
-            white-space:nowrap;
+
+        &__description {
             text-align: left;
             font-weight: 300;
+            white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
+            margin-block-start: 0.5em;
+            margin-block-end: 0.5em;
             margin-left: 10px;
-            margin-bottom: 5px;
         }
-        &--prix {
-            width: 10%;
+        
+        &__prix {
+            width: 15%;
             font-weight: bold;
         }
     }
 }
 
 
-.entrée{
+.entrée {
     margin-bottom: 40px;
     animation: entree 1s;
 }
 
-.plat{
+.plat {
     margin-bottom: 40px;
     animation: plat 1s 0.5s;
     animation-fill-mode: backwards;
 }
 
-.dessert{
+.dessert {
     margin-bottom: 40px;
     animation: dessert 1s 1s;
     animation-fill-mode: backwards;
 }
 
-form{
+form {
     width: 200px;
     margin: 50px auto;
+
     .submit {
         height: 50px;
         width: 200px;
         color: white;
-        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        background: $color-gradient;
         border: 0.01px solid $color-primary;
+        box-shadow: 3px 5px 8px lightgrey;
         font-size: 20px;
         border-radius: 30px;
+        cursor: pointer;
         margin: auto;
-    }
-}
 
-.validation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 0%;
-    background-color: $color-tertiary;
-    cursor: pointer;
-    opacity: 0;
-    transform-origin: right;
-    transition: all 0.4s;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    i{
-        font-size: 30px;
-        color: white;
-        text-align: left;
-        transform: rotate(-360deg);
-        transition: transform 0.5s 130ms ease;
-    }
-} 
-
-.block{
-    width: 90%;
-    display: flex;
-    justify-content: flex-start;
-    margin: 20px auto;
-    border-radius: 20px;
-    overflow: hidden;
-    &:hover .menu{
-        width: 85%;
-        transform: width;
-        border-radius: 0px;
-        text-overflow: ellipsis;
-    }
-    &:hover .validation{
-        width: 15%;
-        transform: width;
-        opacity: 1;
-        & i {
-            transform: rotate(0deg);
+        &:hover {
+            background: lighten($color-secondary, 2%);
+            box-shadow: 5px 8px 4px lightgrey; ;
         }
     }
-
 }
