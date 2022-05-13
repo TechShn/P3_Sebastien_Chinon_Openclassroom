@@ -36,13 +36,13 @@
     z-index: 0;
     cursor: pointer;
     
-    &:active > &--solid{
+    &:hover > &--solid{
             opacity: 1;
     }
     
     @include mobile {
         visibility: visible;
-        &:active > &--solid{
+        &:hover > &--solid{
             opacity: 1;
         }
     }
@@ -79,13 +79,13 @@
     z-index: 0;
     cursor: pointer;
     
-    &:active > &--solid {
+    &:hover > &--solid {
             opacity: 1;
     };
     
     @include mobile {
         display: none;
-        &:active > &--solid {
+        &:hover > &--solid {
             opacity: 1;
         };
     };

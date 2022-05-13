@@ -278,10 +278,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: 0px 0px;
+            object-position: 0px -100px;
             overflow: hidden;
             @include mobile {
-                object-position: 0px -155px;
+                object-position: 0px -70px;
                 object-fit: cover;
             };
         }
@@ -299,8 +299,7 @@
     }
 
     &__place {
-        display: inline-block;
-        width: 35%;
+        width: 200px;
         font-size: 12px;
         margin-block-start: 0em;
         margin-left: 25px;
@@ -314,9 +313,9 @@
 
     &__icon {
         position: relative;
-        bottom: 10px;
-        display: inline-block;
-        width: 45%;
+        left: 75%;
+        bottom: 60px;
+        width: 50px;
         height: 50px;
         font-size: 35px;
         font-weight: 100;
@@ -325,19 +324,18 @@
         z-index: 0;
         cursor: pointer;
         
-        &:active > &--solid{
+        &:hover > &--solid{
             opacity: 1;
         }
         
         @include mobile {
             width: 50px;
-            &:active > &--solid{
+            &:hover > &--solid{
                 opacity: 1;
             }
         };
         
         &--solid {
-            width: 100%;
             position: absolute;
             opacity: 0;
             background-color: #f3ec78;
@@ -366,21 +364,22 @@
         height: 40px;
         font-weight: bold;
         font-size: 18px;
-        width: 130px;
+        width: 100px;
         color: darken($color-tertiary, 35%);
         background-color: $color-tertiary;
         border-radius: 5px;
+        padding: 0px;
 
         @include mobile {
             position: relative;
-            bottom: 310px;
-            left: 60%;
+            bottom: 330px;
+            left: 70%;
         };
          
         @include tablette {
             position: relative;
-            bottom: 390px;
-            left: 80%;
+            bottom: 410px;
+            left: 85%;
         };
     }
 }

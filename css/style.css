@@ -266,7 +266,7 @@ footer a {
   cursor: pointer;
 }
 
-.coeur:active > .coeur--solid {
+.coeur:hover > .coeur--solid {
   opacity: 1;
 }
 
@@ -274,7 +274,7 @@ footer a {
   .coeur {
     visibility: visible;
   }
-  .coeur:active > .coeur--solid {
+  .coeur:hover > .coeur--solid {
     opacity: 1;
   }
 }
@@ -312,7 +312,7 @@ footer a {
   cursor: pointer;
 }
 
-.coeur-2:active > .coeur-2--solid {
+.coeur-2:hover > .coeur-2--solid {
   opacity: 1;
 }
 
@@ -320,7 +320,7 @@ footer a {
   .coeur-2 {
     display: none;
   }
-  .coeur-2:active > .coeur-2--solid {
+  .coeur-2:hover > .coeur-2--solid {
     opacity: 1;
   }
 }
@@ -1084,15 +1084,15 @@ form .submit:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0px 0px;
-     object-position: 0px 0px;
+  -o-object-position: 0px -100px;
+     object-position: 0px -100px;
   overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
   .resto-card__pic--size-2 {
-    -o-object-position: 0px -155px;
-       object-position: 0px -155px;
+    -o-object-position: 0px -70px;
+       object-position: 0px -70px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1111,8 +1111,7 @@ form .submit:hover {
 }
 
 .resto-card__place {
-  display: inline-block;
-  width: 35%;
+  width: 200px;
   font-size: 12px;
   -webkit-margin-before: 0em;
           margin-block-start: 0em;
@@ -1130,9 +1129,9 @@ form .submit:hover {
 
 .resto-card__icon {
   position: relative;
-  bottom: 10px;
-  display: inline-block;
-  width: 45%;
+  left: 75%;
+  bottom: 60px;
+  width: 50px;
   height: 50px;
   font-size: 35px;
   font-weight: 100;
@@ -1142,7 +1141,7 @@ form .submit:hover {
   cursor: pointer;
 }
 
-.resto-card__icon:active > .resto-card__icon--solid {
+.resto-card__icon:hover > .resto-card__icon--solid {
   opacity: 1;
 }
 
@@ -1150,13 +1149,12 @@ form .submit:hover {
   .resto-card__icon {
     width: 50px;
   }
-  .resto-card__icon:active > .resto-card__icon--solid {
+  .resto-card__icon:hover > .resto-card__icon--solid {
     opacity: 1;
   }
 }
 
 .resto-card__icon--solid {
-  width: 100%;
   position: absolute;
   opacity: 0;
   background-color: #f3ec78;
@@ -1192,24 +1190,25 @@ form .submit:hover {
   height: 40px;
   font-weight: bold;
   font-size: 18px;
-  width: 130px;
+  width: 100px;
   color: #2c9c81;
   background-color: #99E2D0;
   border-radius: 5px;
+  padding: 0px;
 }
 
 @media screen and (max-width: 767px) {
   .resto-card__icon-new {
     position: relative;
-    bottom: 310px;
-    left: 60%;
+    bottom: 330px;
+    left: 70%;
   }
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .resto-card__icon-new {
     position: relative;
-    bottom: 390px;
-    left: 80%;
+    bottom: 410px;
+    left: 85%;
   }
 }
