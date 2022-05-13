@@ -1,0 +1,3 @@
+git@github.com:TechShn/P3_Sebastien_Chinon_Openclassroom.git
+
+file:///C:/Users/sebas/Documents/OpenClassrooms/P3_Chinon_Sebastien/index.html
